@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Wallet</title>
+  </head>
+  <body>
+    <div class="root">
+      <div class="main" id="main">
+        <div class="top-bar">
+          <div class="top-bar__item"></div>
+          <div class="notifications-and-userpic">
+            <div class="top-bar__item"></div>
+            <div class="top-bar__item"></div>
+          </div>
+        </div>
+
+        <div class="balance">
+          <p class="balance__title">Available Balance</p>
+          <h2 class="balance__number">$5.000</h2>
+        </div>
+
+        <div class="buttons-row">
+          <div class="buttons-row__item">
+            <div class="buttons-row__item__img-container">
+              <div class="buttons-row__item__img-container__image"></div>
+            </div>
+            <p class="buttons-row__item__title">Topup</p>
+          </div>
+
+          <div class="buttons-row__item">
+            <div class="buttons-row__item__img-container">
+              <div class="buttons-row__item__img-container__image"></div>
+            </div>
+            <p class="buttons-row__item__title">Send</p>
+          </div>
+
+          <div class="buttons-row__item">
+            <div class="buttons-row__item__img-container">
+              <div class="buttons-row__item__img-container__image"></div>
+            </div>
+            <p class="buttons-row__item__title">Recieve</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity" id="activity">
+        <div class="activity__top">
+          <p class="activity__top__title">Your activity</p>
+          <button class="activity__top__button" id="activity__top__button">
+            <p class="activity__top__button__title">Check history</p>
+            <div class="activity__top__button__img"></div>
+          </button>
+        </div>
+
+        <div class="activity__block">
+          <p class="activity__block__date">TODAY</p>
+          <div class="activity__block__item">
+            <div class="activity__block__item__img-and-text">
+              <div class="activity__block__item__img"></div>
+              <div class="activity__block__item__text">
+                <p class="activity__block__item__text__header">Car loans</p>
+                <p class="activity__block__item__text__description">Chase</p>
+              </div>
+            </div>
+            <p class="activity__block__item__sum--positive">$5000</p>
+          </div>
+          <div class="activity__block__item">
+            <div class="activity__block__item__img-and-text">
+              <div class="activity__block__item__img"></div>
+              <div class="activity__block__item__text">
+                <p class="activity__block__item__text__header">Car loans</p>
+                <p class="activity__block__item__text__description">Chase</p>
+              </div>
+            </div>
+            <p class="activity__block__item__sum--negative">-$2980</p>
+          </div>
+        </div>
+
+        <div class="activity__block">
+          <p class="activity__block__date">YESTERDAY</p>
+          <div class="activity__block__item">
+            <div class="activity__block__item__img-and-text">
+              <div class="activity__block__item__img"></div>
+              <div class="activity__block__item__text">
+                <p class="activity__block__item__text__header">Car loans</p>
+                <p class="activity__block__item__text__description">Chase</p>
+              </div>
+            </div>
+            <p class="activity__block__item__sum--negative">-$2980</p>
+          </div>
+
+          <div class="activity__block__item">
+            <div class="activity__block__item__img-and-text">
+              <div class="activity__block__item__img"></div>
+              <div class="activity__block__item__text">
+                <p class="activity__block__item__text__header">Car loans</p>
+                <p class="activity__block__item__text__description">Chase</p>
+              </div>
+            </div>
+            <p class="activity__block__item__sum--positive">$5000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

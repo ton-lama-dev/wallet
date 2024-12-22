@@ -80,6 +80,7 @@
     border-radius: 5vh 5vh 0 0;
     padding: 4vh 3vh 0 3vh;
     color: white;
+    overflow: scroll;
 }
 
 .activity__top {
@@ -104,11 +105,18 @@
 }
 
 .activity__top__button__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 2vh;
     height: 2vh;
-    display: inline-block;
     background: rgba(255, 255, 255, 0.452);
     border-radius: 1.3vw;
+}
+
+.activity__top__button__img img {
+    width: 1vh;
+    height: 1vh;
 }
 
 .activity__block {
@@ -138,6 +146,16 @@
     width: 5vh;
     height: 5vh;
     border-radius: 1.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.activity__block__item__img img {
+    width: 2vh;
+    height: 2vh;
+    filter: invert(1);
+    -webkit-filter: invert(1);
 }
 
 .activity__block__item__text {
@@ -148,6 +166,7 @@
     font-size: 2vh;
     margin-bottom: 0.5vh;
     font-weight: 600;
+    color: #ffffffd9;
 }
 
 .activity__block__item__text__description {
@@ -166,6 +185,9 @@
     color: rgba(248, 31, 31, 0.74);
 }
 
+
+
+/* ANIMATIONS */
 
 @keyframes activityExpandAnimation {
     from {
@@ -226,4 +248,43 @@
 
 .reveal_main {
     animation: revealMain 0.5s forwards;
+}
+
+@keyframes turn-down {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes turn-up {
+    from {
+        transform: rotate(180deg);
+    }
+    to {
+        transform: rotate(0);
+    }
+}
+
+.turn-down {
+    animation: turn-down 0.5s forwards;
+}
+
+.turn-up {
+    animation: turn-up 0.5s backwards;
+}
+
+
+
+/* COMMON CLASSES */
+
+.inverted {
+    filter: invert(1);
+    -webkit-filter: invert(1);
+}
+
+.turned-over {
+    transform: rotate(180deg);
 }

@@ -19,12 +19,13 @@
 
 .top-bar__item {
     display: inline-block;
-    background: rgb(197, 197, 197);
-    height: 5vh;
-    width: 5vh;
-    border-radius: 3vw;
+    height: 3.8vh;
+    width: 3.8vh;
 }
 
+.top-bar__item.userpic {
+    border-radius: 1vh;
+}
 
 .notifications-and-userpic {
     letter-spacing: 5vw;
@@ -59,10 +60,17 @@
 }
 
 .buttons-row__item__img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 10vh;
     width: 10vh;
     border-radius: 4vw;
     border: 1px solid rgba(0, 0, 0, 0.171);
+}
+
+.buttons-row__item__img-container__image {
+    width: 3vh;
 }
 
 .buttons-row__item__title {
